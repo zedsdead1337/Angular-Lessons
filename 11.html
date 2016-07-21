@@ -1,10 +1,21 @@
 <html>
 <head>
 <script type="text/javascript" src="angular.min.js"></script>
-</head>
-<body ng-app="">
-	<!--  -->
 
+<!-- We need to use this angular route js also. -->
+<script type="text/javascript" src="angular-route.min.js"></script>
+
+<!-- USING external controller code. -->
+<script type="text/javascript" src="controller11.js"></script>
+</head>
+<body ng-app="mainApp">
+	<!-- INTRO TO ROUTING -->
+	<!-- Way to handle different URL context -->
+	<!-- What is displayed which URL  -->
+	<!-- now this ng view will be the one which displayed dynamic data. -->
+	<div ng-view>
+
+	</div>
 
 	<script >
 	
