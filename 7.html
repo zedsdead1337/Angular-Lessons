@@ -1,0 +1,62 @@
+<html>
+<head>
+	<script type="text/javascript" src="angular.min.js"></script>
+	<title>Angular | Hands on</title>
+	</head>
+<body ng-app="myNigga">
+
+<!-- MVC architecture -->
+<!-- Design pattern for all web application on the internet.  -->
+
+
+<!-- Model: How the application behaves iwth data -->
+<!-- View: Whats visible to the user -->
+<!-- Controller: the coding part to relate model and view together -->
+
+<!-- ng-click is angular substitute to JS onClick() event handler -->
+	<div ng-controller="languages">
+		Select your favorite language: 
+		<button ng-click="php()">PHP</button>
+		<button ng-click="javascript()">Javascript</button>
+		<button ng-click="cpp()">C++</button>
+		<button ng-click="java()">Java</button>
+
+		<p> You have selected: {{myFavLanguage}}</p>
+		<!-- myFavLanguage is not defined before, but will be controled using the controller we have coded below-->
+	</div>
+
+<!-- Controller coding goes here in script tag -->
+<!-- module creates a module of application you are creating  -->
+<!-- module name is the ng-app="" waala name,  -->
+<!-- afer the name, you  have to give blank array because this is where we will load dependencies later -->
+	<script type="text/javascript">
+		
+	var application= angular.module('myNigga',[]);
+
+	application.controller('languages',['$scope',function($scope){
+		$scope.myFavLanguage='none';
+		$scope.php= function(){
+			$scope.myFavLanguage='PHP';
+		}
+		$scope.javascript= function(){
+			$scope.myFavLanguage='javascript';
+		}
+		$scope.cpp= function(){
+			$scope.myFavLanguage='C++';
+		}
+		$scope.java= function(){
+			$scope.myFavLanguage='Javaaaaaa';
+		}
+
+	}]);
+
+	</script>
+	<!--controller name will be the controller we have to code.  -->
+	<!-- function thing is an anonymous function, -->
+	<!--$scope is used because in case we use compressor softwares which compress the javascript code , they usually rename all the variables, now if scopr gets renamed then angular wouldnt know wtf is what.  -->
+
+</body>
+</html>
+<!--  -->
+<!--  -->
+<!--  -->

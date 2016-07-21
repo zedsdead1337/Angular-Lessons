@@ -1,0 +1,22 @@
+<html>
+<head>
+<script type="text/javascript" src="angular.min.js"></script>
+</head>
+<body ng-app="">
+	<!-- FILTERZZZZ -->
+	<!-- Used in expressions with a pipe symbol | -->
+	<!-- currency: "anythign here" : number of decimal points here  -->
+	Your name: <input type="text" ng-model="naam">
+	<br /> Welcome, {{naam|uppercase}}
+	<br />
+	Price: <input type="text" ng-model="price">
+	<br /> Amount: {{price|currency:"Rs. ":5}}
+
+	<script >
+	
+
+
+	</script>
+</body>
+</html>
+<!--  -->

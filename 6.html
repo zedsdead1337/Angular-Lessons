@@ -1,0 +1,24 @@
+<html>
+<head>
+	<script type="text/javascript" src="angular.min.js"></script>
+	<title>Angular | Hands on</title>
+	</head>
+<body ng-app="">
+
+<!-- ng-repeat -->
+<!-- its directive which we use to loop through data -->
+<div ng-init="myFavLang=[{name:'PHP',extension:'.php'},{name:'Javascript',extension:'.js'},{name:'Ruby',extension:'.rb'},{name:'C++',extension:'.cpp'}]">
+<!-- Here myFavLang is defined as kind of an array which has some properties-->
+	
+	<p ng-repeat="language in myFavLang">
+		Name: {{language.name}} <br />
+		Extension: {{language.extension}}
+	</p>
+	<!-- Repeat is through the array thing, using language as variable which is looping one by one through myFavLang -->
+ </div>
+
+</body>
+</html>
+<!--  -->
+<!--  -->
+<!--  -->

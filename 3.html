@@ -1,0 +1,25 @@
+<html>
+<head>
+	<script type="text/javascript" src="angular.min.js"></script>
+	<title>Angular | Hands on</title>
+	</head>
+<body ng-app=""><!--ng Stands for angular, App tells it that from here the angular app begins -->
+
+
+<!-- DIRECTIVES, are attributes for HTML elements starting from ng- -->
+
+
+<!-- by using contenteditable, we can make div accept text.  -->
+Type something below <br />
+<div ng-model="name" contenteditable="true">test value, will appear when page loads but is editable</div>
+<!-- Although here ng-model will not work -->
+
+<!-- Same thing with {{}}, we can also use ng-bind, which will now bind the "name" to Div tag, Result being technically the same -->
+<div ng-bind="name"></div>
+
+
+</body>
+</html>
+<!--  -->
+<!--  -->
+<!--  -->
