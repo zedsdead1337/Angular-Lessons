@@ -1,0 +1,34 @@
+<html>
+<head>
+<script src="angular.min.js"></script>
+<script src="17controller.js"></script>
+</head>
+<body ng-app="mainApp">
+	<!-- Search box | Advanced -->
+	
+
+	<div ng-controller="people">
+		<ul>
+			<h2>Names and Age of niggz</h2>
+			<li ng-repeat="person in persons | filter:globalSearch">
+				{{ "Name: " + person.Name + "  Age: "  + person.Age + "  Fav color: " + person.Fav_color}}
+			</li>
+		</ul>
+	</div>
+	
+	<div id="searchBoxes">
+			Global Search Filter:
+			<input type="text" ng-model="globalSearch.$"><br>
+			Name Search Filter:
+			<input type="text" ng-model="globalSearch.Name"><br>
+			Age Search Filter:
+			<input type="text" ng-model="globalSearch.Age"><br>
+			Fav Color Search Filter:
+			<input type="text" ng-model="globalSearch.Fav_color">
+	</div>
+
+
+	
+</body>
+</html>
+<!--  -->
