@@ -1,0 +1,24 @@
+<html>
+<head>
+<script type="text/javascript" src="angular.min.js"></script>
+<script type="text/javascript" src="angular-route.min.js"></script>
+<script type="text/javascript" src="15controller.js"></script>
+</head>
+<body ng-app="mainApp">
+	<!-- $http Service -->
+	<!-- To retrieve data from servers and remote servers etc. Kind of an XML http object like in JS -->
+	<div ng-controller="people">
+		<ul>
+			<h2>Names and Age of niggz</h2>
+			<li ng-repeat="person in persons">
+				{{person.Name + ':' + person.Age}}
+			</li>
+		</ul>
+	</div>
+	
+
+
+	
+</body>
+</html>
+<!--  -->
