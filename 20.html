@@ -1,0 +1,18 @@
+<html>
+<head>
+<script src="angular.min.js"></script>
+<script src="20controller.js"></script>
+</head>
+<!-- Range based loops, For bigger loops -->
+	<body ng-app="mainApp">
+		<div ng-controller="app">
+			<li ng-repeat="i in range track by $index">
+				asjdhajkdh{{i}} <br>
+			</li>
+			<!-- By default, the ng-repeat tracks by values, here we are directing it to track by index instead, because hte new array is created with 100 elements which are Undefined, by default -->
+		</div>
+		
+		
+	</body>
+</html>
+<!--  -->
